@@ -1,53 +1,129 @@
 body {
-  background-color: rgb(223, 212, 193);
+  background-color: rgb(73, 71, 68);
+  margin: 0 auto;
+  color: rgb(219, 214, 205);
+  font-family: 'Karma', serif;
+  font-weight: 300;
 }
-h3 {
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+h2:after {
+    content:' ';
+    display:block;
+    border:1px solid rgb(74, 72, 67);
+}
+input {
+  margin-bottom: 10px;
+  border: 0;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 2px;
+}
+input[type="submit"] {
+ background: rgb(108, 105, 99);
+ color: white;
+ border-radius: 2px;
+}
+button {
+  margin-bottom: 10px;
+  border: 0;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 2px;
+}
+.container {
   background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 10px;
 }
 .swatch {
   width: 100px;
   height: 100px;
-  margin: 2px;
+  /*margin: 10px;*/
+  margin: 10px 20px 10px 0px;
   color: white;
   display: inline-block;
   vertical-align: top;
+  text-align: center;
+  font-size: 14px;
 }
 #picker {
   width: 100px;
   height: 100px;
-  margin: 2px;
+  margin-bottom: 10px;
   border: none;
   color: white;
   text-align: center;
-}
-.container {
-  
 }
 #user-side {
   background-color: rgba(0, 0, 0, 0.2);
   display: inline-block;
   width: 45%;
+  margin: 10px 10px 10px 0px;
+  text-align: left;
   vertical-align: top;
 }
 #feed-side {
   background-color: rgba(0, 0, 0, 0.2);
   display: inline-block;
   width: 45%;
+  margin: 10px 10px 10px 0px;
+  text-align: left;
   vertical-align: top;
+}
+.header {
+  /*background-color: rgba(0, 0, 0, 0.2);*/
+  padding: 10px;
+  margin: 10px 10px 20px 10px;
+  height: 40px;
+  text-align: left;
+  vertical-align: center;
+}
+#welcome {
+  /*background-color: rgba(0, 0, 0, 0.2);*/
+  display: inline-block;
+  vertical-align: center;
+  margin: 0;
+  padding: 0;
+}
+#logout {
+  display: inline-block;
+  background: rgb(108, 105, 99);
+  text-align: right;
+  color: white;
+  margin-right: 20px;
+  border-radius: 2px;
 }
 .new-color {
   background-color: rgba(0, 0, 0, 0.2);
-  /*display: inline-block;*/
+  padding: 10px;
+  margin: 10px 10px 20px 10px;
 }
 .your-colors {
   background-color: rgba(0, 0, 0, 0.2);
-  /*display: inline-block;*/
+  padding: 10px;
+  margin: 10px;
 }
 .new-posts {
   background-color: rgba(0, 0, 0, 0.2);
-  /*display: inline-block;*/
+  padding: 10px;
+  margin: 10px 10px 20px 10px;
 }
 .posts-feed {
   background-color: rgba(0, 0, 0, 0.2);
-  /*display: inline-block;*/
+  padding: 10px;
+  margin: 10px;
+}
+.post {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px 10px;
+  margin: 10px 0px;
+  text-align: inherit;
 }

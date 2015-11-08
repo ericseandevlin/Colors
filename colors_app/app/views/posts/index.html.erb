@@ -5,12 +5,16 @@
     <title></title>
   </head>
   <body>
-    <div class="buttons"><%= link_to '<button type="button">Logout</button>'.html_safe, logout_path, :method => 'delete'%></div>
 
 <!-- CREATE COLOR =======================================-->
   <div id="user-side">
+    <div class="header">
+      <%= link_to '<button type="button"  id="logout">Logout</button>'.html_safe, logout_path, :method => 'delete'%>
+      <h1 id="welcome">Welcome, <%= @current_user.username %>!</h1>
+    </div>
+
     <div class="new-color">
-      <h3>Create a new color!</h3>
+      <h2>Create a new color?</h2>
 
       <%= form_for(:color, url: color_post_path, :method => 'post') do |f| %>
       <%= f.text_field :color_info, placeholder: "click", id: "picker", class: "jscolor {required:false, position:'right', width:101, padding:0, shadow:false,
@@ -23,7 +27,7 @@
 <!-- ALL YOUR COLORS =======================================-->
     <div class="your-colors">
       <div>
-        <h3>Your Colors</h3>
+        <h2>Your Colors</h2>
       </div>
       <% @colors.each do |item| %>
         <div class="swatch" style="background-color: <%= item.color_info %>">
@@ -34,29 +38,34 @@
   </div>
 
 <!-- MAKE A POST =======================================-->
-<div id="feed-side">
-    <div class="new-posts">
-      <h3>What's on your mind, <%= @current_user.username %>?</h3>
-      <%= render partial: 'form' %>
-    </div>
+  <div id="feed-side">
 
-<!-- ALL POSTS =======================================-->
-    <div class="posts-feed">
-
-      <div>
-        <h3>Your Posts</h3>
+      <div class="header">
       </div>
 
-      <% @posts.each do |item| %>
+      <div class="new-posts">
+        <h2>Share a color?</h2>
+        <%= render partial: 'form' %>
+      </div>
+
+  <!-- ALL POSTS =======================================-->
+      <div class="posts-feed">
+
         <div>
-          <br>
-          Title: <%= item.title %>
-          <br>
-          Content: <%= item.content %>
+          <h2>Your Posts</h2>
         </div>
-      <% end %>
+
+        <% @posts.each do |item| %>
+          <div class="post">
+            <br>
+            Title: <%= item.title %>
+            <br>
+            Content: <%= item.content %>
+          </div>
+        <% end %>
+
+      </div>
 
     </div>
-  </div>
   </body>
 </html>
