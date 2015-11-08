@@ -123,7 +123,18 @@ button {
 }
 .post {
   background-color: rgba(0, 0, 0, 0.2);
-  padding: 10px 10px;
-  margin: 10px 0px;
-  text-align: inherit;
+  /*padding: 10px 10px 10px 10px;
+  margin: 10px 0px;*/
+  font-size: 1.15rem;
+}
+#title {
+  /*background-color: rgba(0, 0, 0, 0.2);*/
+  padding: 10px;
+
+}
+#content {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin-bottom: 20px;
+
 }

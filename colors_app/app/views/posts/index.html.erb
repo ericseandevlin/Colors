@@ -57,10 +57,8 @@
 
         <% @posts.each do |item| %>
           <div class="post">
-            <br>
-            Title: <%= item.title %>
-            <br>
-            Content: <%= item.content %>
+            <div id="title">Title: <%= item.title %></div>
+            <div id="content"><%= item.content %></div>
           </div>
         <% end %>
 
