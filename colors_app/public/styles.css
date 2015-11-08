@@ -1,0 +1,53 @@
+body {
+  background-color: rgb(223, 212, 193);
+}
+h3 {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.swatch {
+  width: 100px;
+  height: 100px;
+  margin: 2px;
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+}
+#picker {
+  width: 100px;
+  height: 100px;
+  margin: 2px;
+  border: none;
+  color: white;
+  text-align: center;
+}
+.container {
+  
+}
+#user-side {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+}
+#feed-side {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+}
+.new-color {
+  background-color: rgba(0, 0, 0, 0.2);
+  /*display: inline-block;*/
+}
+.your-colors {
+  background-color: rgba(0, 0, 0, 0.2);
+  /*display: inline-block;*/
+}
+.new-posts {
+  background-color: rgba(0, 0, 0, 0.2);
+  /*display: inline-block;*/
+}
+.posts-feed {
+  background-color: rgba(0, 0, 0, 0.2);
+  /*display: inline-block;*/
+}

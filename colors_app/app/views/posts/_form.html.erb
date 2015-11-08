@@ -1,0 +1,5 @@
+<%= form_for(:post, url: '/posts', :method => 'post') do |f| %>
+  <%= f.text_field :title, placeholder: "Title" %><br>
+  <%= f.text_area :content, size: "30x10", placeholder: "Content" %><br>
+  <%= f.submit "Post"%>
+<%end%>

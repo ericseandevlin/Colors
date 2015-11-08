@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="buttons"><%= link_to '<button type="button">Logout</button>'.html_safe, logout_path, :method => 'delete'%></div>
+
+<!-- CREATE COLOR =======================================-->
+  <div id="user-side">
+    <div class="new-color">
+      <h3>Create a new color!</h3>
+
+      <%= form_for(:color, url: color_post_path, :method => 'post') do |f| %>
+      <%= f.text_field :color_info, placeholder: "click", id: "picker", class: "jscolor {required:false, position:'right', width:101, padding:0, shadow:false,
+    borderWidth:0, backgroundColor:'transparent', insetColor:'#000', hash:true, uppercase:false}" %><br>
+      <%= f.text_field :color_name, placeholder: "Add Color Name" %><br>
+      <%= f.submit "Create"%>
+      <% end %>
+    </div>
+
+<!-- ALL YOUR COLORS =======================================-->
+    <div class="your-colors">
+      <div>
+        <h3>Your Colors</h3>
+      </div>
+      <% @colors.each do |item| %>
+        <div class="swatch" style="background-color: <%= item.color_info %>">
+          <p><%= item.color_name %></p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+<!-- MAKE A POST =======================================-->
+<div id="feed-side">
+    <div class="new-posts">
+      <h3>What's on your mind, <%= @current_user.username %>?</h3>
+      <%= render partial: 'form' %>
+    </div>
+
+<!-- ALL POSTS =======================================-->
+    <div class="posts-feed">
+
+      <div>
+        <h3>Your Posts</h3>
+      </div>
+
+      <% @posts.each do |item| %>
+        <div>
+          <br>
+          Title: <%= item.title %>
+          <br>
+          Content: <%= item.content %>
+        </div>
+      <% end %>
+
+    </div>
+  </div>
+  </body>
+</html>
