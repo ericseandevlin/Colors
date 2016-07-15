@@ -34,7 +34,7 @@ Also the heroku deployed version doesnt have the sign-up modal and is missing so
 
 -----
 ### Upcoming
- - Be able to actually share swatches with your friends
- - Create palettes if up to 5 color. Comment on and share those as well
+ - Be able to actually share swatches with your friends.
+ - Create palettes if up to 5 color. Comment on and share those as well.
 
 
