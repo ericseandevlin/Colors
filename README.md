@@ -1,12 +1,10 @@
 # Colors
 ### a little Rails app for creating and sharing colors!
+In this app you can choose a color and save it to your own swatches, and make posts to your friends about your favortite colors! Developed as Project #2 for General Assembly's Web Development course.
 -----
 
 ### Demo
 Heroku: https://damp-journey-7569.herokuapp.com/login
-
-
-In this app you can choose a color and save it to your own swatches, and make posts to your friends about your favortite colors!
 
 -----
 ### Plugins used:
@@ -36,5 +34,3 @@ Also the heroku deployed version doesnt have the sign-up modal and is missing so
 ### Upcoming
  - Be able to actually share swatches with your friends.
  - Create palettes if up to 5 color. Comment on and share those as well.
-
-
