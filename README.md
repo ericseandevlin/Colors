@@ -11,13 +11,12 @@ In this app you can choose a color and save it to your own swatches, and make po
 -----
 ### Plugins used:
 
-##### JSColor
+#### JSColor
 A javascript colorpicker
 http://jscolor.com/
 
-I also used a couple google Material icons (for some some buttons):
 
-##### Google Material Icons
+#### Google Material Icons
 https://www.google.com/design/icons/
 
 -----
